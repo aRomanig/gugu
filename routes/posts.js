@@ -38,7 +38,7 @@ router.post('/', authMiddleware, (req, res) => {
         return res.status(400).json({ erro: 'Título e conteúdo são obrigatórios' })
     }
 
-    if (content.length > 260) {
+    if (content.length > 4) {
         return res.status(400).json({ erro: 'O post dever ter no máximo 4 caracteres.' })
     }
 
