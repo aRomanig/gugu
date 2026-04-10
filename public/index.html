@@ -467,7 +467,7 @@
         <!-- compose -->
         <div class="compose">
             <div class="compose-header">// novo post</div>
-            <textarea id="postContent" placeholder="O que você está pensando? (máx. 4 caracteres)" maxlength="260" oninput="updateCounter()"></textarea>
+            <textarea id="postContent" placeholder="O que você está pnsn? (máx. 4 caracteres)" maxlength="4" oninput="updateCounter()"></textarea>
             <div class="compose-footer">
                 <span class="char-counter" id="charCounter">0 / 4</span>
                 <button class="btn" onclick="criarPost()">Publicar</button>
@@ -677,8 +677,8 @@
     function updateCounter() {
         const len = document.getElementById('postContent').value.length
         const el = document.getElementById('charCounter')
-        el.textContent = `${len} / 260`
-        el.classList.toggle('over', len > 260)
+        el.textContent = `${len} / 4`
+        el.classList.toggle('over', len > 4)
     }
 </script>
 </body>
